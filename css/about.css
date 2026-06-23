@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #FAF6F0;
+  color: #2C1A0E;
+}
+
+section {
+  padding: 80px 60px;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D2691E;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Georgia, serif;
+  color: #2C1A0E;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.img-placeholder {
+  background-color: #E8DDD4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9E7B5A;
+  font-size: 14px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #D2691E;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #B8561A;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 8px;
+  border: 2px solid #3E2723;
+  color: #3E2723;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: #3E2723;
+  color: #FFF8E7;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1600px;
+  background-color: #2C1A0E;
+
+}
+
+.navbar-logo {
+  display: flex;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar-logo span {
+  padding-top: 1.5rem;
+  color: #FFF8E7;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.navbar-container .navbar-menu {
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: auto;
+}
+
+.navbar-container .navbar-menu a {
+  text-decoration: none;
+  color: #FFF8E7;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 3px 15px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+}
+
+.navbar-container .navbar-menu a:hover,
+.navbar-container .navbar-menu a.active {
+  color: #C1502e;
+}
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  cursor: pionter;
+  padding: 10px;
+  border: none;
+}
+
+
+.navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #FFF8E7;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.team-section {
+  background-color: #fff;
+  border-bottom: 1px solid #E8DDD4;
+}
+
+.team-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-header p {
+  font-size: 15px;
+  color: #6B4C35;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+}
+
+.team-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+}
+
+.team-photo {
+  width: 120px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  color: #2C1A0E;
+}
+
+.team-role {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #D2691E;
+}
+
+.team-bio {
+  font-size: 13px;
+  color: #6B4C35;
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.cta-section {
+  background-color: #FAF6F0;
+  padding: 80px 60px;
+  text-align: center;
+  border-bottom: 1px solid #E8DDD4;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Georgia, serif;
+  color: #2C1A0E;
+  margin-bottom: 14px;
+}
+
+.cta-section p {
+  font-size: 15px;
+  color: #6B4C35;
+  max-width: 420px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ── FOOTER ──────────────────────────────── */
+.footer-section {
+  background-color: #3E2723;
+  padding: 60px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  color: #FFF8E7;
+}
+
+.footer-content p {
+  font-size: 14px;
+  color: #D2B48C;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.social-link {
+  display: flex;
+  gap: 20px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(210, 180, 140, 0.2);
+}
+
+.social-link a {
+  font-size: 14px;
+  color: #D2B48C;
+  font-weight: 600;
+}
+
+.social-link a:hover {
+  color: #FFF8E7;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #9E7B5A;
+  margin-top: 8px;
+}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media (max-width: 880px) {
+  .section {
+    padding: 60px 24px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section,
+  .cta-section {
+    padding: 60px 24px;
+  }
+
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    background-color: #2C1A0E;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 998;
+  }
+
+
+  .navbar-container .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media(max-width: 480px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.7rem;
+  }
+
+  .navbar-container .navbar-menu li a {
+    font-size: 1.2rem;
+    padding: 3px;
+  }
+}

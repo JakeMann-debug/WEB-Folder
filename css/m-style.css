@@ -116,6 +116,21 @@
   width: fit-content;
 }
 
+.orderBtn {
+  display: inline;
+  margin: auto;
+  border-radius: 8px;
+  color: #fcf6b1;
+  background-color: #2d1e2f;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.orderBtn:hover {
+  background-color: #fcf6b1;
+  color: #2d1e2f;
+}
+
 /* cta */
 .menu-cta {
   text-align: center;
