@@ -209,7 +209,7 @@ body{
 .social-link a:hover {
     color: #917f7f;
 }
- @media(max-width: 880px) {
+@media(max-width: 880px) {
 
     .navbar {
         backdrop-filter: none;
